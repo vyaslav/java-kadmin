@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.vyaslav</groupId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
 
     <name>Java Kadmin (Parent)</name>
     <description>Java Kadmin makes interaction with kadmin from java apps easier</description>
 
-    <url>https://github.com/openfeign/feign</url>
-    <inceptionYear>2012</inceptionYear>
+    <url>https://github.com/vyaslav/java-kadmin</url>
+    <inceptionYear>2020</inceptionYear>
 
     <organization>
         <name>vyaslav</name>
