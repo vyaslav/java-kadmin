@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.vyaslav</groupId>
+    <version>0.9-SNAPSHOT</version>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Java Kadmin (Parent)</name>
+    <description>Java Kadmin makes interaction with kadmin from java apps easier</description>
+
+    <url>https://github.com/openfeign/feign</url>
+    <inceptionYear>2012</inceptionYear>
+
+    <organization>
+        <name>vyaslav</name>
+        <url>https://github.com/vyaslav</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License v3+</name>
+            <url>https://www.gnu.org/licenses/gpl.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <modules>
+        <module>java-kadmin-client</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <configuration>
+                        <release>11</release>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/vyaslav/java-kadmin/issues</url>
+    </issueManagement>
+
+    <scm>
+        <url>https://github.com/vyaslav/java-kadmin</url>
+        <connection>scm:git:https://github.com/vyaslav/java-kadmin.git</connection>
+        <developerConnection>scm:git:git@github.com:vyaslav/java-kadmin.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>vyaslav</id>
+            <name>Viacheslav Avramenko</name>
+            <email>vyaslav@gmail.com</email>
+        </developer>
+    </developers>
+</project>
